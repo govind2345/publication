@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kiran Academic Publications</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="imagePopup">
+  <span id="closeBtn">&times;</span>
+  <img id="popupImg">
+</div>
+
+<header class="navbar">
+  <h2 class="logo">Kiran Academic Publications</h2>
+
+  <!-- Hamburger -->
+  <div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#editorial">Editorial</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Gyan Parampara</h1>
+    <p>International Journal of Commerce, Humanities & Social Sciences</p>
+
+    <div class="badges">
+      <span>Peer Reviewed</span>
+      <span>Open Access</span>
+      <span>Quarterly Journal</span>
+    </div>
+
+    <a href="#contact" class="btn-primary">Submit Research Paper</a>
+    <a href="#about" class="btn-primary">About Journal</a>
+  </div>
+</section>
+<!-- STATS -->
+<section class="stats">
+  <div>500+ Papers</div>
+  <div>100+ Authors</div>
+  <div>50+ Reviewers</div>
+  <div>Global Reach</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+<h2>About Journal</h2>
+
+<p>
+Gyan Parampara is a widely indexed, peer reviewed, multidisciplinary international scholarly journal dedicated to promoting research in Commerce, Humanities and Social Sciences.
+</p>
+
+<p>
+As an open access journal, published papers receive global visibility and reach scholars, academicians, and researchers worldwide.
+</p>
+
+<ul>
+<li>Peer Reviewed Quarterly Journal</li>
+<li>Open Access Publication</li>
+<li>Multidisciplinary Scope</li>
+<li>Fast Review Process</li>
+<li>Crossref DOI Support</li>
+<li>Indexed in Major Databases</li>
+</ul>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section light">
+<h2>Our Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Research Paper Publication</h3>
+<p>Publish original research papers with global visibility.</p>
+</div>
+
+<div class="card">
+<h3>Double Blind Review</h3>
+<p>Expert reviewers ensure quality and originality.</p>
+</div>
+
+<div class="card">
+<h3>DOI & Indexing</h3>
+<p>Crossref DOI and indexing support available.</p>
+</div>
+
+<div class="card">
+<h3>Fast Publication</h3>
+<p>Accepted papers published within 1-2 days.</p>
+</div>
+
+<div class="card">
+<h3>Indian Publication Fee</h3>
+<p>₹1600 + GST</p>
+</div>
+
+<div class="card">
+<h3>International Fee</h3>
+<p>US $80</p>
+</div>
+
+</div>
+</section><!-- EDITORIAL BOARD -->
+<section id="editorial" class="section">
+  <h2>Editorial Board</h2>
+
+  <div class="grid">
+
+    <!-- Editor in Chief -->
+    <a href="javascript:void(0)" class="card profile"
+      onclick="openProfile('images/DRPUNAMSINGH.jpeg','Prof. Punam Singh','Editor-in-Chief','Department of Psychology, Jai Prakash University')">
+      <img src="images/DRPUNAMSINGH.jpeg">
+      <h3>Prof. Punam Singh</h3>
+      <p>Editor-in-Chief</p>
+    </a>
+
+    <!-- Executive Editor -->
+    <a href="javascript:void(0)" class="card profile"
+      onclick="openProfile('images/neha.jpg','Dr. Neha Agrawal','Executive Editor','Associate Professor, Department of Commerce, Birgunj Public College, Purbanchal University, Nepal')">
+      <img src="images/neha.jpg">
+      <h3>Dr. Neha Agrawal</h3>
+      <p>Executive Editor</p>
+    </a>
+
+    <!-- Editorial Board Members -->
+
+    <a href="javascript:void(0)" class="card profile"
+      onclick="openProfile('images/DRSUDHABALA.jpeg','Prof. Sudha Bala','Editorial Board','Former Head & Dean, P.G. Department of Hindi, Jai Prakash University')">
+      <img src="images/DRSUDHABALA.jpeg">
+      <h3>Prof. Sudha Bala</h3>
+      <p>Editorial Board</p>
+    </a>
+
+    <a href="javascript:void(0)" class="card profile"
+      onclick="openProfile('images/lakshman.jpg','Prof. Lakshman Singh','Editorial Board','Former Head & Dean, P.G. Department of Commerce, Jai Prakash University')">
+      <img src="images/lakshman.jpg">
+      <h3>Prof. Lakshman Singh</h3>
+      <p>Editorial Board</p>
+    </a>
+
+    <a href="javascript:void(0)" class="card profile"
+      onclick="openProfile('images/baidyanath.jpg','Prof. Baidyanath Mishra','Editorial Board','Former Head, P.G. Department of Sanskrit, Jai Prakash University')">
+      <img src="images/baidyanath.jpg">
+      <h3>Prof. Baidyanath Mishra</h3>
+      <p>Editorial Board</p>
+    </a>
+
+    <a href="javascript:void(0)" class="card profile"
+      onclick="openProfile('images/sanjay.jpg','Prof. Sanjay Kumar','Editorial Board','Department of Psychology, University of Allahabad')">
+      <img src="images/sanjay.jpg">
+      <h3>Prof. Sanjay Kumar</h3>
+      <p>Editorial Board</p>
+    </a>
+
+    <a href="javascript:void(0)" class="card profile"
+      onclick="openProfile('images/rajkiran.jpg','Dr. Rajkiran Prabhakar','Editorial Board','Assistant Professor, Institute of Management Studies, Banaras Hindu University')">
+      <img src="images/rajkiran.jpg">
+      <h3>Dr. Rajkiran Prabhakar</h3>
+      <p>Editorial Board</p>
+    </a>
+
+    <a href="javascript:void(0)" class="card profile"
+      onclick="openProfile('images/vikash.jpg','Dr. Vikash Kumar','Editorial Board','Assistant Professor, Department of History, Ramanujan College, University of Delhi')">
+      <img src="images/vikash.jpg">
+      <h3>Dr. Vikash Kumar</h3>
+      <p>Editorial Board</p>
+    </a>
+
+    <a href="javascript:void(0)" class="card profile"
+      onclick="openProfile('images/DRANUPAMKUMARSIGH.jpeg','Dr. Anupam Kumar Singh','Editorial Board','Assistant Professor, Department of Geography, Rajendra College, Chapra, Jai Prakash University')">
+      <img src="images/DRANUPAMKUMARSIGH.jpeg">
+      <h3>Dr. Anupam Kumar Singh</h3>
+      <p>Editorial Board</p>
+    </a>
+
+    <a href="javascript:void(0)" class="card profile"
+      onclick="openProfile('images/riteshwar.jpg','Dr. Riteshwar Nath Tiwari','Editorial Board','Assistant Professor, P.G. Department of History, Jai Prakash University')">
+      <img src="images/riteshwar.jpg">
+      <h3>Dr. Riteshwar Nath Tiwari</h3>
+      <p>Editorial Board</p>
+    </a>
+
+    <a href="javascript:void(0)" class="card profile"
+      onclick="openProfile('images/DRJAYAKRPANDEY.jpeg','Dr. Jaya Kumari Pandey','Editorial Board','Assistant Professor, P.G. Department of Economics, Jai Prakash University')">
+      <img src="images/DRJAYAKRPANDEY.jpeg">
+      <h3>Dr. Jaya Kumari Pandey</h3>
+      <p>Editorial Board</p>
+    </a>
+
+    <a href="javascript:void(0)" class="card profile"
+      onclick="openProfile('images/DRSAPANA.jpeg','Dr. Sapna Mishra','Editorial Board','Assistant Professor, Department of Geography, Government College Kartala, Korba, Chhattisgarh')">
+      <img src="images/DRSAPANA.jpeg">
+      <h3>Dr. Sapna Mishra</h3>
+      <p>Editorial Board</p>
+    </a>
+
+    <a href="javascript:void(0)" class="card profile"
+      onclick="openProfile('images/mallika.jpg','Dr. Mallika S.','Editorial Board','Assistant Professor, Department of Commerce, Mahatma Gandhi Memorial College, Udupi, University of Mangalore')">
+      <img src="images/mallika.jpg">
+      <h3>Dr. Mallika S.</h3>
+      <p>Editorial Board</p>
+    </a>
+
+    <a href="javascript:void(0)" class="card profile"
+      onclick="openProfile('images/DRNITUSINGH.jpeg','Dr. Nitu Singh','Editorial Board','Assistant Professor, Department of Psychology, Rajendra College, Chapra, Jai Prakash University')">
+      <img src="images/DRNITUSINGH.jpeg">
+      <h3>Dr. Nitu Singh</h3>
+      <p>Editorial Board</p>
+    </a>
+
+    <a href="javascript:void(0)" class="card profile"
+      onclick="openProfile('images/abhishek.jpg','Dr. Abhishek Kumar Chintu','Editorial Board','Assistant Professor, Department of Economics, Nand Lal Singh College, Jaitpur-Daudpur, Jai Prakash University')">
+      <img src="images/abhishek.jpg">
+      <h3>Dr. Abhishek Kumar Chintu</h3>
+      <p>Editorial Board</p>
+    </a>
+
+    <a href="javascript:void(0)" class="card profile"
+      onclick="openProfile('images/DRISHMITAPANDEY.jpeg','Dr. Ismita Pandey','Editorial Board','Assistant Professor, Department of Philosophy, Principal Pritwi Chand Science College, Jai Prakash University')">
+      <img src="images/DRISHMITAPANDEY.jpeg">
+      <h3>Dr. Ismita Pandey</h3>
+      <p>Editorial Board</p>
+    </a>
+
+    <a href="javascript:void(0)" class="card profile"
+      onclick="openProfile('images/akhil.jpg','Mr. Akhil Raj','Editorial Board','Assistant Professor, Department of Management Studies, Ramanujan College, University of Delhi')">
+      <img src="images/akhil.jpg">
+      <h3>Mr. Akhil Raj</h3>
+      <p>Editorial Board</p>
+    </a>
+
+  </div>
+</section>
+<!-- GALLERY -->
+<section id="gallery" class="section light">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="images/1.png">
+    <img src="images/2.png">
+    <img src="images/3.png">
+    <img src="images/4.png">
+    <img src="images/5.png">
+  </div>
+</section>
+
+<!-- TEAM -->
+<!--
+<section id="team" class="section">
+  <h2>Our Team</h2>
+  <div class="grid">
+
+  <div class="card profile" onclick="openProfile('images/publisher.jpg','Ritesh Prakash','Director','Founder of Kiran Publications with expertise in academic publishing.')">
+    <img src="images/publisher.jpg">
+    <h3>Ritesh Prakash</h3>
+    <p>Director</p>
+  </div>
+
+  <div class="card profile" onclick="openProfile('images/publisher2.jpg','Vishal Kanodia','Executive Director','Handles strategic growth and operations of publications.')">
+    <img src="images/publisher2.jpg">
+    <h3>Vishal Kanodia</h3>
+    <p>Executive Director</p>
+  </div>
+
+  <div class="card profile" onclick="openProfile('images/publisher3.jpg','Neeraj Kumar Yadav','Operational Director','Manages daily workflow and publication process.')">
+    <img src="images/publisher3.jpg">
+    <h3>Neeraj Kumar Yadav</h3>
+    <p>Operational Director</p>
+  </div>
+
+</div>
+</section>
+-->
+<!-- CONTACT -->
+<section id="contact" class="section light">
+  <h2>Contact Us</h2>
+  <p>Email: rpsrivastava305@gmail.com</p>
+
+  <form action="mailto:rpsrivastava305@gmail.com" method="post" enctype="text/plain" class="form">
+
+  <input type="text" name="Name" placeholder="Name" required>
+
+  <input type="email" name="Email" placeholder="Email" required>
+
+  <textarea name="Message" placeholder="Message" required></textarea>
+
+  <button type="submit" class="btn-primary">Send Message</button>
+
+</form>
+</section>
+
+<footer>
+  <p>© 2026 Kiran Academic Publications | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+<div id="profilePopup">
+
+  <div class="popup-content">
+
+    <span id="closeProfile">&times;</span>
+
+    <div class="popup-left">
+      <img id="profileImg">
+    </div>
+
+    <div class="popup-right">
+      <h2 id="profileName"></h2>
+      <h4 id="profileRole"></h4>
+      <p id="profileDesc"></p>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
