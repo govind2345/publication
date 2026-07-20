@@ -48,16 +48,27 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // ===== PROFILE POPUP =====
-  window.openProfile = function (img, name, role, desc) {
-    const popup = document.getElementById("profilePopup");
+  // ===== PROFILE POPUP =====
+window.openProfile = function (img, name, role, desc, linkedin = "") {
 
-    document.getElementById("profileImg").src = img;
-    document.getElementById("profileName").innerText = name;
-    document.getElementById("profileRole").innerText = role;
-    document.getElementById("profileDesc").innerText = desc;
+  const popup = document.getElementById("profilePopup");
 
-    popup.style.display = "flex";
-  };
+  document.getElementById("profileImg").src = img;
+  document.getElementById("profileName").innerText = name;
+  document.getElementById("profileRole").innerText = role;
+  document.getElementById("profileDesc").innerText = desc;
+
+  const linkedinBtn = document.getElementById("profileLinkedIn");
+
+  if (linkedin) {
+    linkedinBtn.href = linkedin;
+    linkedinBtn.style.display = "inline-block";
+  } else {
+    linkedinBtn.style.display = "none";
+  }
+
+  popup.style.display = "flex";
+};
 
   const closeProfile = document.getElementById("closeProfile");
   const profilePopup = document.getElementById("profilePopup");
